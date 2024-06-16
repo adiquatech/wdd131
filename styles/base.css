@@ -108,7 +108,7 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.sylvan img {
+.profile_pic img {
     width: 150px;
     margin-left: 20px;
 }
@@ -228,7 +228,7 @@ h1 {
         flex-direction: column;
     }
 
-    .sylvan img {
+    .profile_pic img {
         width: 100%;
         height: auto;
         margin: 20px 0 0 0;
