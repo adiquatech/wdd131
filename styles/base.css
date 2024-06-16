@@ -259,7 +259,7 @@ h1 {
         margin-bottom: 40px;
     }
 
-    .sylvan img {
+    .profile_pic img {
         max-width: 100%; 
         width: 800px;
         margin-bottom: 10px;
@@ -284,7 +284,7 @@ h1 {
 }
 
 @media (max-width: 720px) and (max-width: 1024px) {
-    .sylvan img.img-fluid {
+    .profile_pic.img-fluid {
         max-width: 100%; 
         width: 500px;
         height: auto; 
