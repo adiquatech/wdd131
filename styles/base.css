@@ -5,17 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
 
 /* Base CSS content */
-.fa-beat,
-.fa-beat-fade,
-.fa-fade,
-.fa-flip,
-.fa-spin {
-    animation-delay: var(--fa-animation-delay, 0s); /* Ensure 0 is followed by a time unit like 's' for seconds */
-}
-
-.fa-rotate-by {
-    transform: rotate(var(--fa-rotate-angle, 0deg)); /* Ensure 'none' is replaced with a valid unit like '0deg' */
-}
 
 * {
     margin: 0;
