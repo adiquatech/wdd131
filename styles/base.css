@@ -6,13 +6,13 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color:white;
+    background-color: white;
     color: green;
 }
 
 .header {
     background-color: darkgray;
-    color:green;
+    color: green;
     text-align: center;
     padding: 15px 0;
 }
@@ -23,10 +23,10 @@ body {
 
 h1 {
     margin-bottom: 30px;
-  }
+}
 
 .nav {
-    background-color:green;
+    background-color: green;
     padding: 0;
 }
 
@@ -43,6 +43,7 @@ h1 {
 .navigation li {
     flex: 1 1 auto;
 }
+
 .navigation a {
     color: #C0C0C0;
     text-decoration: none;
@@ -56,7 +57,7 @@ h1 {
 .navigation a:hover {
     color: white;
     text-decoration: overline;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .navigation a.active {
@@ -90,7 +91,6 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 22px;
 }
-
 
 .card-body {
     padding: 20px;
@@ -129,13 +129,13 @@ h1 {
 .flag p {
     flex: 1;
     font-family: 'Times New Roman', Times, serif;
-    color: 	#555555;
+    color: #555555;
     font-size: 18px;
     margin-top: 5px;
-    text-align: justify
+    text-align: justify;
 }
 
-.nigeria  {
+.nigeria {
     color: green;
     font-weight: 400;
     font-style: normal;
@@ -172,7 +172,7 @@ h1 {
 }
 
 .sidebar .card-body ul li {
-    line-height: 2; 
+    line-height: 2;
     font-size: 16.5px;
     text-decoration: none;
     font-family: Verdana, sans-serif;
@@ -180,27 +180,25 @@ h1 {
 
 .sidebar .card-body ul li:hover a {
     color: #ED115F;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .sidebar .card-body ul li a:visited {
-    color: #7D3C98; 
+    color: #7D3C98;
 }
 
-.fa{
-    margin-left:5px;
-    margin-right:5px;
+.fa {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .footer {
-    background-color:green;
+    background-color: green;
     color: white;
     text-align: center;
 }
 
-
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .navbar-collapse {
         flex-direction: column;
         align-items: center;
@@ -233,111 +231,28 @@ h1 {
         height: auto;
         margin: 20px 0 0 0;
     }
-}
 
-
-@media (max-width: 767px) {
     .sidebar .card-body ul {
-        position: relative; 
-        top: auto; 
-        transform: none; 
-        text-align: left; 
+        position: relative;
+        top: auto;
+        transform: none;
+        text-align: left;
         margin-left: 10px;
     }
-}
 
-@media (max-width: 767px) {
-    .flag .official img.img-fluid {
-        max-width: 100%; 
-        width: 800px;
-        margin-bottom: 10px;
-    }
-
-    .nigeria {
-        font-size: 32px;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .profile_pic img {
-        max-width: 100%; 
-        width: 800px;
-        margin-bottom: 10px;
-    }
-
-}
-
-
-@media (max-width: 767px) {
-    .flag .official img.img-fluid {
-        max-width: 100%; 
-        height: auto; 
-    }
-}
-
-@media (max-width: 720px) and (max-width: 1024px) {
-    .flag .official img.img-fluid {
-        max-width: 100%; 
-        width: 500px;
-        height: auto; 
-    }
-}
-
-@media (max-width: 720px) and (max-width: 1024px) {
-    .profile_pic.img-fluid {
-        max-width: 100%; 
-        width: 500px;
-        height: auto; 
-    }
-}
-
-@media (max-width: 720px) and (max-width: 1024px) {
-    .nigeria {
-        font-size: 32px;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-}
-
-@media (max-width: 720px) and (max-width: 1024px) {
-    .card .about, .resources,
-    .card-body .title {
-        font-size: 22px;
-    }
-    .card {
-        margin-top: 20px;
-    }
-    .sidebar{
-        margin-bottom: 40px;
-    }
-}
-
-@media (max-width: 768px) {
     .container {
         padding: 10px;
     }
-    .flag .official img{
-        margin-bottom: 5px;
+
+    .flag .official img.img-fluid {
+        max-width: 100%;
+        height: auto;
     }
-}
 
-
-.hamburger,
-.close-icon {
-    font-size: 20px;
-    background: black;
-    border: none;
-    cursor: pointer;
-    display: none; 
-    color: white; 
-    margin-bottom: -15px;
-    margin-top: 15px;
-}
-
-@media (max-width: 768px) {
-    .menu-container {
-        width: 100%;
-        background-color: black;
+    .nigeria {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 40px;
     }
 
     .hamburger {
@@ -380,8 +295,41 @@ h1 {
         padding: 10px 0;
     }
 
-    .navigation li:nth-child(5) a 
-	{
-        padding-bottom:35px;
-	}
+    .navigation li:nth-child(5) a {
+        padding-bottom: 35px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+    .flag .official img.img-fluid {
+        max-width: 100%;
+        width: 500px;
+        height: auto;
+    }
+
+    .profile_pic.img-fluid {
+        max-width: 100%;
+        width: 500px;
+        height: auto;
+    }
+
+    .nigeria {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .card .about,
+    .resources,
+    .card-body .title {
+        font-size: 22px;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .sidebar {
+        margin-bottom: 40px;
+    }
 }
