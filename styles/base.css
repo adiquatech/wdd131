@@ -10,11 +10,11 @@
 .fa-fade,
 .fa-flip,
 .fa-spin {
-    animation-delay: var(--fa-animation-delay, 0s); /* Ensure 0 is followed by a time unit like 's' for seconds */
+    animation-delay: var(--fa-animation-delay, 0s);
 }
 
 .fa-rotate-by {
-    transform: rotate(var(--fa-rotate-angle, 0deg)); /* Ensure 'none' is replaced with a valid unit like '0deg' */
+    transform: rotate(var(--fa-rotate-angle, 0deg));
 }
 
 * {
@@ -36,11 +36,7 @@ body {
     padding: 15px 0;
 }
 
-.header h1 span {
-    color: white;
-}
-
-h1 {
+.header h1 {
     margin-bottom: 30px;
 }
 
@@ -54,8 +50,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 13px;
-    margin-bottom: -20px;
+    margin: 13px 0 -20px;
     background-color: blue;
 }
 
@@ -76,7 +71,6 @@ h1 {
 .navigation a:hover {
     color: white;
     text-decoration: overline;
-    transition: 0.5s;
 }
 
 .navigation a.active {
@@ -107,7 +101,6 @@ h1 {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 22px;
 }
 
@@ -124,7 +117,6 @@ h1 {
     flex: 1;
     text-align: justify;
     font-size: 19px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .profile_pic img {
@@ -138,27 +130,22 @@ h1 {
 }
 
 .flag .official img {
-    width: 200px;
-    height: 154px;
-    margin-right: 20px;
-    margin-bottom: 5px;
-    margin-top: 25px;
+    width: 318px;
+    height: 159px;
+    margin: 25px 20px 5px 0;
 }
 
 .flag p {
     flex: 1;
-    font-family: 'Times New Roman', Times, serif;
     color: #555555;
     font-size: 18px;
-    margin-top: 5px;
     text-align: justify;
 }
 
 .nigeria {
     color: green;
-    font-weight: 400;
-    font-style: normal;
     font-size: 24px;
+    font-weight: 400;
 }
 
 .card-body .title {
@@ -193,22 +180,14 @@ h1 {
 .sidebar .card-body ul li {
     line-height: 2;
     font-size: 16.5px;
-    text-decoration: none;
-    font-family: Verdana, sans-serif;
 }
 
 .sidebar .card-body ul li:hover a {
     color: #ED115F;
-    transition: 0.5s;
 }
 
 .sidebar .card-body ul li a:visited {
     color: #7D3C98;
-}
-
-.fa {
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 .footer {
@@ -263,11 +242,6 @@ h1 {
         padding: 10px;
     }
 
-    .flag .official img.img-fluid {
-        max-width: 100%;
-        height: auto;
-    }
-
     .nigeria {
         font-size: 32px;
         text-align: center;
@@ -320,7 +294,7 @@ h1 {
 }
 
 @media (min-width: 720px) and (max-width: 1024px) {
-    .flag .official img.img-fluid {
+    .flag .official img {
         max-width: 100%;
         width: 500px;
         height: auto;
