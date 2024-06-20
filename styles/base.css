@@ -1,3 +1,6 @@
+/* Import Font Awesome CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
 
@@ -7,11 +10,11 @@
 .fa-fade,
 .fa-flip,
 .fa-spin {
-    animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s); /* Ensure 0 is followed by a time unit like 's' for seconds */
 }
 
 .fa-rotate-by {
-    transform: rotate(var(--fa-rotate-angle, 0deg));
+    transform: rotate(var(--fa-rotate-angle, 0deg)); /* Ensure 'none' is replaced with a valid unit like '0deg' */
 }
 
 * {
@@ -23,22 +26,23 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: white;
-    color: green;
+    color: #333; /* Darker text for better contrast */
 }
 
 .header {
-    background-color: darkgray;
-    color: green;
+    background-color: #333; /* Dark background */
+    color: white; /* Light text on dark background */
     text-align: center;
     padding: 15px 0;
 }
 
 .header h1 {
     margin-bottom: 30px;
+    color: white; /* Inheriting color from header */
 }
 
 .nav {
-    background-color: green;
+    background-color: green; /* Background color for navigation */
     padding: 0;
 }
 
@@ -47,8 +51,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 13px 0 -20px;
-    background-color: blue;
+    margin-top: 13px;
+    margin-bottom: -20px;
+    background-color: blue; /* Background color for navigation */
 }
 
 .navigation li {
@@ -56,7 +61,7 @@ body {
 }
 
 .navigation a {
-    color: #C0C0C0;
+    color: #C0C0C0; /* Original color */
     text-decoration: none;
     font-size: 21px;
     position: relative;
@@ -66,12 +71,12 @@ body {
 }
 
 .navigation a:hover {
-    color: white;
+    color: white; /* Improved contrast on hover */
     text-decoration: overline;
 }
 
 .navigation a.active {
-    color: white;
+    color: white; /* Active link color for better visibility */
 }
 
 .container {
@@ -92,12 +97,13 @@ body {
 }
 
 .card-header {
-    background-color: #ED115f;
-    color: white;
+    background-color: #ED115f; /* Header background color */
+    color: white; /* Light text on dark background */
     padding: 10px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 22px;
 }
 
@@ -114,6 +120,7 @@ body {
     flex: 1;
     text-align: justify;
     font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .profile_pic img {
@@ -129,20 +136,25 @@ body {
 .flag .official img {
     width: 200px;
     height: 154px;
-    margin: 25px 20px 5px 0;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 25px;
 }
 
 .flag p {
     flex: 1;
-    color: #555555;
+    font-family: 'Times New Roman', Times, serif;
+    color: #555555; /* Darker text for better contrast */
     font-size: 18px;
+    margin-top: 5px;
     text-align: justify;
 }
 
 .nigeria {
-    color: green;
-    font-size: 24px;
+    color: green; /* Adjusted for better contrast */
     font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
 }
 
 .card-body .title {
@@ -150,6 +162,7 @@ body {
     font-size: 17px;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #333; /* Darker text for better contrast */
 }
 
 .sidebar .card {
@@ -170,26 +183,29 @@ body {
 }
 
 .sidebar .card-body ul li a {
-    color: #000;
+    color: #000; /* Dark text */
     text-decoration: none;
 }
 
 .sidebar .card-body ul li {
     line-height: 2;
     font-size: 16.5px;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
 }
 
 .sidebar .card-body ul li:hover a {
-    color: #ED115F;
+    color: #ED115F; /* Improved contrast on hover */
+    transition: 0.5s;
 }
 
 .sidebar .card-body ul li a:visited {
-    color: #7D3C98;
+    color: #7D3C98; /* Visited link color */
 }
 
 .footer {
-    background-color: green;
-    color: white;
+    background-color: green; /* Footer background color */
+    color: white; /* Light text on dark background */
     text-align: center;
 }
 
@@ -237,6 +253,11 @@ body {
 
     .container {
         padding: 10px;
+    }
+
+    .flag .official img.img-fluid {
+        max-width: 100%;
+        height: auto;
     }
 
     .nigeria {
@@ -291,7 +312,7 @@ body {
 }
 
 @media (min-width: 720px) and (max-width: 1024px) {
-    .flag .official img {
+    .flag .official img.img-fluid {
         max-width: 100%;
         width: 500px;
         height: auto;
