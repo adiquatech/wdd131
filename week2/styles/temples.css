@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+header, footer {
+    background-color: #3c0a64;
+    color: rgb(240, 240, 240);
+}
+
+header a {
+    color: rgb(240, 240, 240);
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    font-size: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+    margin-bottom: 4%;
+}
+
+main h2 {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: .5rem;
+}
+
+
+header {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+}
+
+header, main {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#menu::before {
+    content: "☰";
+    color: rgb(240, 240, 240);
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+nav.show {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    height: 10vh;
+    align-content: center;
+}
+
+
