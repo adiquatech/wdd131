@@ -55,6 +55,14 @@
         color: var(--white);
         border-radius: 3px;
     }
+    /*.place-weather h2::after {*/
+    /*!*    add class icon images/weather_clouds_sun_sunny_icon.svg*!*/
+    /*    content: url("../images/weather_clouds_sun_sunny_icon.svg");*/
+    /*    width: 50px;*/
+    /*    height: 50px;*/
+    /*    padding: 0 1rem 1rem 1rem;*/
+    /*}*/
+    
     .weather-icon {
         display: none;
     }
