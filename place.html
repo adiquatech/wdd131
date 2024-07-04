@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Place of nigeria">
+	<meta name="keywords" content="Brazil, country, South America">
+	<meta name="author" content="Quadri Kolawole" >
+	<link href="styles/place_small.css" rel="stylesheet">
+	<link href="styles/place_large.css" rel="stylesheet">
+	<script defer src="scripts/place.js"></script>
+	<script defer src="scripts/getdates.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+	<title>Place page</title>
+</head>
+<body>
+<header>
+	<h1>Nigeria</h1>
+</header>
+<main>
+	<div class="hero">
+		<picture>
+			<source media="(min-width: 1000px)" srcset="images\place.webp">
+			<img alt="Botanical Garden image hero" height="700" src="images\nigeria_small.webp" width="450">
+		</picture>
+		<div class="place-information">
+			<div class="place-data">
+				<h2>Data</h2>
+				<table>
+					<tr>
+						<td><strong>Area:</strong></td>
+						<td>923,769 sq km</td>
+					</tr>
+					<tr>
+						<td><strong>Population:</strong></td>
+						<td>206,139,589</td>
+					</tr>
+					<tr>
+						<td><strong>Capital:</strong></td>
+						<td>Abuja</td>
+					</tr>
+					<tr>
+						<td><strong>Language:</strong></td>
+						<td>English (official), Hausa, Yoruba and Igbo</td>
+					</tr>
+					<tr>
+						<td><strong>Currency:</strong></td>
+						<td>Nigerian Naira (NGN)</td>
+					</tr>
+					<tr>
+						<td><strong>Time Zone:</strong></td>
+						<td>UTC+1</td>
+					</tr>
+					<tr>
+						<td><strong>Calling Code:</strong></td>
+						<td>+234</td>
+					</tr>
+					<tr>
+						<td><strong>Internet TLD:</strong></td>
+						<td>.ng</td>
+					</tr>
+				</table>
+			</div>
+			<div class="place-weather">
+				<h2>Weather</h2>
+				<!-- import svg image from external file with alternate text -->
+				<object class="weather-icon" data="images/weather_clouds_sun_sunny_icon.svg" type="image/svg+xml" aria-label="A weather icon to support the actual conditions"></object>
+				<table>
+					<tr>
+						<td><strong>Temperature:</strong></td>
+						<td id="temperature"></td>
+					</tr>
+					<tr>
+						<td><strong>Conditions:</strong></td>
+						<td>Partly Cloudy</td>
+					</tr>
+					<tr>
+						<td><strong>Wind:</strong></td>
+						<td id="wind-speed"></td>
+					</tr>
+					<tr>
+						<td><strong>Wind Chill:</strong></td>
+						<td id="wind-chill"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</main>
+<footer>
+	<p>&copy; <span id="currentYear"></span> Quadri Kolawole - Idaho</p>
+	<p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
