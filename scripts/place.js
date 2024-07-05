@@ -1,18 +1,22 @@
-function calculateWindChill(temperatureCelsius, windSpeedKmPerHour) {
-    if (temperatureCelsius > 10 || windSpeedKmPerHour <= 4.8) {
-        return "N/A";
-    }
-
-    const windChill = 13.12 + (0.6215 * temperatureCelsius)
-        - (11.37 * Math.pow(windSpeedKmPerHour, 0.16))
-        + (0.3965 * temperatureCelsius * Math.pow(windSpeedKmPerHour, 0.16));
-    return windChill.toFixed(2) + "°C";
-}
-
-const temperatureCelsius = 28;
-const windSpeedKmPerHour = 3;
-const windChill = calculateWindChill(temperatureCelsius, windSpeedKmPerHour);
-
-document.getElementById('wind-chill').innerHTML = windChill;
-document.getElementById('temperature').innerHTML = temperatureCelsius + "°C";
-document.getElementById('wind-speed').innerHTML = windSpeedKmPerHour + " km/h";
+function calculateWindChill(temp, windSpeed) {
+    return (13.12 + 0.6215 * temp - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temp * Math.pow(windSpeed, 0.16)).toFixed(2);
+  }
+  
+  const windChillHtml = document.querySelector('#windChillValue');
+  const tempHtml = document.querySelector('#temperatureValue');
+  const windSpeedHtml = document.querySelector('#windSpeedValue');
+  
+  // Define the temperature and wind speed
+  const temp = 27
+  const windSpeed = 3
+  // Set the values in the HTML
+  tempHtml.textContent = temp + "°C";
+  windSpeedHtml.textContent = windSpeed + " km/h";
+  
+  
+  if(temp <= 10 && windSpeed > 4.8) {
+    const windChill = calculateWindChill(temp, windSpeed);
+    windChillHtml.textContent = windChill;
+  } else {
+    windChillHtml.textContent = "N/A";
+  }
